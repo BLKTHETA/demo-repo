@@ -1,11 +1,4 @@
-# Demo
+## Demo Repo
 
-Some description!
-
-## Subheader
-
-Some more text.
-
-## Local Development
-
-1. Open index.html in your browser.
+Kept alive and public for nostalgia.
+(*and some expirimentations...*)
