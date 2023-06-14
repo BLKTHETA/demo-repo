@@ -3,24 +3,20 @@ name: CI
 on:
   push:
     branches: 
-      - main
-  pull_request:
-    branches:
-      - main
+      - test_ci
 
   workflow_dispatch:
 
 jobs:
-  build:
+  display:
     runs-on: ubuntu-latest
+    
+    env:
+      platform: Azure
+      region: central
+      profile_path: profile/
 
     steps:
-      - uses: actions/checkout@v3
-
-      - name: Run a one-line script
-        run: echo Hello, world!
-
-      - name: Run a multi-line script
+      - name: Display custom environment variables 
+        if: ${{ env.platform == 'Central' }}
         run: |
-          echo Add other actions to build,
-          echo test, and deploy your project.
